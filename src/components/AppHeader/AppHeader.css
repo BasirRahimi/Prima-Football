@@ -1,0 +1,16 @@
+.App-header {
+  background-color: #dac3ee;
+  padding: 16px 0;
+  text-align: center;
+}
+.App-header .logo {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.App-header .logo .logo-suffix {
+  font-size: 1.25rem;
+  color: #8334c2;
+  margin-left: 1rem;
+  line-height: 1rem;
+}
