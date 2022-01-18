@@ -3,10 +3,62 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {
+  ApolloClient,
+  InMemoryCache,
+  ApolloProvider,
+  gql
+} from '@apollo/client';
+
+const client = new ApolloClient({
+  uri: 'http://127.0.0.1:3001/',
+  cache: new InMemoryCache()
+});
+
+export const GET_NEXT_MATCH = gql`
+  query nextMatch {
+    nextMatch {
+      id
+      date
+      home {
+        id
+        name
+        stadium
+        firstEleven {
+          id
+          firstname
+          lastname
+          height
+          dateOfBirth
+          position
+          squadNumber
+          nationality
+        }
+      }
+      away {
+        id
+        name
+        stadium
+        firstEleven {
+          id
+          firstname
+          lastname
+          height
+          dateOfBirth
+          position
+          squadNumber
+          nationality
+        }
+      }
+    }
+  }
+`;
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ApolloProvider client={client}>
+      <App />
+    </ApolloProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
