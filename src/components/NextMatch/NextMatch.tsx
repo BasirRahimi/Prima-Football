@@ -8,7 +8,6 @@ function NextMatch() {
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error :(</p>;
-    console.log(data.nextMatch.home);
   
   const date = new Date(data.nextMatch.date);
   const months = [

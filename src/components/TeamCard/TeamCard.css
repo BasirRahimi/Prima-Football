@@ -24,6 +24,9 @@
   border-spacing: 0;
   width: 100%;
 }
+.team-card table thead tr td.sortable{
+  cursor: pointer;
+}
 .team-card .player {
   cursor: pointer;
 }
