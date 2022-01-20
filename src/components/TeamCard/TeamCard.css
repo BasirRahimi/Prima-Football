@@ -33,7 +33,7 @@
 .team-card .player:nth-child(odd) {
   background-color: #efe4f8;
 }
-.team-card .player td {
+.team-card td {
   padding: 0.5rem;
 }
 .team-card .player:hover {
