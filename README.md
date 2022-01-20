@@ -1,5 +1,12 @@
 # Start the application
-### `npm start`
+
+You must clone and start the graphql server repo before running this application. https://github.com/BasirRahimi/Prima-Graphql
+
+# To get started
+Run the following:
+`npm install`
+`npm start`
+
 
 The homepage should automatically open in your default browser, if it does not look through the terminal you ran `npm start` in to find the Local url and copy it into your browsers address.
 
