@@ -26,7 +26,7 @@ function Player(props:any) {
       <div className="player-details">
         <p><FontAwesomeIcon icon={faBirthdayCake} />{player.dateOfBirth}</p>
         <p><FontAwesomeIcon icon={faGlobeEurope} />{player.nationality}</p>
-        <p><FontAwesomeIcon icon={faRulerVertical} />{player.height} meters</p>
+        <p><FontAwesomeIcon icon={faRulerVertical} />{player.height} cm</p>
         <p><FontAwesomeIcon icon={faStreetView} />{player.position}</p>
         <p><FontAwesomeIcon icon={faTshirt} />{player.squadNumber}</p>
       </div>
